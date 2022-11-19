@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Adel-Systems</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+
+    <!-- TOP NAV -->
+    <div class="top-nav" id="home">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <p> <i class='bx bxs-envelope'></i> adel-sys.com</p>
+                    <p> <i class='bx bxs-phone-call'></i> 123456789</p>
+                </div>
+                <div class="col-auto social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Adel Systems<span class="dot">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact us</a>
+                    </li>
+                </ul>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    class="btn btn-brand ms-lg-3">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SLIDER -->
+    <div class="owl-carousel owl-theme hero-slider">
+        <div class="slide slide1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                        <h6 class="text-white text-uppercase">ADEL SYSTEMS</h6>
+                        <h1 class="display-3 my-4">We ensures IT enabled<br />operations</h1>
+                        <a href="#" class="btn btn-brand">Get Started</a>
+                        <a href="#" class="btn btn-outline-light ms-3">Our work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1 text-white">
+                        <h6 class="text-white text-uppercase">Ensures IT enabled operations</h6>
+                        <h1 class="display-3 my-4">ADEL SYSTEMS <br /> FOR IT INFRASTRUCTURING</h1>
+                        <a href="#" class="btn btn-brand">Get Started</a>
+                        <a href="#" class="btn btn-outline-light ms-3">Our work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 py-5">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="info-box">
+                                <img src="https://www.veritis.com/wp-content/uploads/2019/06/it-infrastructure-services-1.png" alt="">
+                                <div class="ms-4">
+                                    <h5>Adel Systems</h5>
+                                    <p>located at Dubai, established since 2015,with an infrastructure clubbed with 
+                                        hardware and software services and solutions.Our stringent focus on security, 
+                                        quality and sturdiness of the entire infrastructure setup keep us a level ahead when it comes to 
+                                        delivering software solutions & services in a timely, quality rich manner </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MILESTONE -->
+   
+
+    <section id="services" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Our Services</h6>
+                        <h1>What We Do?</h1>
+                        <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                            roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon1.png" alt="">
+                        <h5>Digital Marketing</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon2.png" alt="">
+                        <h5>Logo Designing</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon3.png" alt="">
+                        <h5>Buisness consulting</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon4.png" alt="">
+                        <h5>Videography</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon5.png" alt="">
+                        <h5>Brand Identity</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon6.png" alt="">
+                        <h5>Ethical Hacking</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Work</h6>
+                        <h1>Successful projects</h1>
+                        <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                            roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects-slider" class="owl-theme owl-carousel">
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project1.jpg" alt="">
+                <div class="content">
+                    <h2>Consulting Marketing</h2>
+                    <h6>Website Design</h6>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project2.jpg" alt="">
+                <div class="content">
+                    <h2>Consulting Marketing</h2>
+                    <h6>Website Design</h6>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project3.jpg" alt="">
+                <div class="content">
+                    <h2>Consulting Marketing</h2>
+                    <h6>Website Design</h6>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project4.jpg" alt="">
+                <div class="content">
+                    <h2>Consulting Marketing</h2>
+                    <h6>Website Design</h6>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project5.jpg" alt="">
+                <div class="content">
+                    <h2>Consulting Marketing</h2>
+                    <h6>Website Design</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Team</h6>
+                        <h1>Team Members</h1>
+                        <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                            roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="img/team_1.jpg" alt="">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Marvin McKinney</h5>
+                        <p>Marketing Coordinator</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="img/team_2.jpg" alt="">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Kathryn Murphy</h5>
+                        <p>Ethical Hacker</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="img/team_3.jpg" alt="">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Darrell Steward</h5>
+                        <p>Software Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light" id="reviews">
+
+        <div class="owl-theme owl-carousel reviews-slider container">
+            <div class="review">
+                <div class="person">
+                    <img src="img/team_1.jpg" alt="">
+                    <h5>Ralph Edwards</h5>
+                    <small>Market Development Manager</small>
+                </div>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut quis, rem culpa labore voluptate
+                    ullam! In, nostrum. Dicta, vero nihil. Delectus minus vitae rerum voluptatum, excepturi incidunt ut,
+                    enim nam exercitationem optio ducimus!</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <div class="review">
+                <div class="person">
+                    <img src="img/team_2.jpg" alt="">
+                    <h5>Ralph Edwards</h5>
+                    <small>Market Development Manager</small>
+                </div>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut quis, rem culpa labore voluptate
+                    ullam! In, nostrum. Dicta, vero nihil. Delectus minus vitae rerum voluptatum, excepturi incidunt ut,
+                    enim nam exercitationem optio ducimus!</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <div class="review">
+                <div class="person">
+                    <img src="img/team_3.jpg" alt="">
+                    <h5>Ralph Edwards</h5>
+                    <small>Market Development Manager</small>
+                </div>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut quis, rem culpa labore voluptate
+                    ullam! In, nostrum. Dicta, vero nihil. Delectus minus vitae rerum voluptatum, excepturi incidunt ut,
+                    enim nam exercitationem optio ducimus!</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Blog</h6>
+                        <h1>Blog Posts</h1>
+                        <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                            roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/project5.jpg" alt="">
+                        <a href="#" class="tag">Web Design</a>
+                        <div class="content">
+                            <small>01 Dec, 2022</small>
+                            <h5>Web Design trends in 2022</h5>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/project4.jpg" alt="">
+                        <a href="#" class="tag">Programming</a>
+                        <div class="content">
+                            <small>01 Dec, 2022</small>
+                            <h5>Web Design trends in 2022</h5>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/project2.jpg" alt="">
+                        <a href="#" class="tag">Marketing</a>
+                        <div class="content">
+                            <small>01 Dec, 2022</small>
+                            <h5>Web Design trends in 2022</h5>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h4 class="navbar-brand">Prixima<span class="dot">.</span></h4>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                        <div class="col-auto social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        </div>
+                        <div class="col-auto conditions-section">
+                            <a href="#">privacy</a>
+                            <a href="#">terms</a>
+                            <a href="#">disclaimer</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p class="mb-0">Copyright vicpra 2022. All rights Reserved</p> Distributed By <a
+                hrefs="https://themewagon.com">ThemeWagon</a>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row gy-4">
+                            <div class="col-lg-4 col-sm-12 bg-cover"
+                                style="background-image: url(img/c2.jpg); min-height:300px;">
+                                <div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <form class="p-lg-5 col-12 row g-3">
+                                    <div>
+                                        <h1>Get in touch</h1>
+                                        <p>Fell free to contact us and we will get back to you as soon as possible</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">First name</label>
+                                        <input type="text" class="form-control" placeholder="Jon" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">Last name</label>
+                                        <input type="text" class="form-control" placeholder="Doe" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="userName" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" placeholder="Johndoe@example.com"
+                                            id="userName" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="exampleInputEmail1" class="form-label">Enter Message</label>
+                                        <textarea name="" placeholder="This is looking great and nice."
+                                            class="form-control" id="" rows="4"></textarea>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-brand">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
